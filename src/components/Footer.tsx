@@ -103,7 +103,7 @@ const Footer = () => {
               <img 
                 src="/imgs/logo-bhelite.png" 
                 alt="BH Elite Imobiliária" 
-                className="h-8 w-auto mr-4"
+                className="h-16 w-auto mr-4"
               />
             </div>
             <div className="text-center">
