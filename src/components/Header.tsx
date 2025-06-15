@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X, Phone, MapPin } from "lucide-react";
+import { Menu, X, Phone, MapPin, Heart, Megaphone, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -22,9 +22,18 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-4 text-sm">
-            <span>Meus Favoritos</span>
-            <span>Anuncie seu Imóvel</span>
-            <span>Área do Cliente</span>
+            <div className="flex items-center gap-1">
+              <Heart className="w-4 h-4" />
+              <span>Meus Favoritos</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Megaphone className="w-4 h-4" />
+              <span>Anuncie seu Imóvel</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <LogIn className="w-4 h-4" />
+              <span>Área do Cliente</span>
+            </div>
           </div>
         </div>
       </div>
