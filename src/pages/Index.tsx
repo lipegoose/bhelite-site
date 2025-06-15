@@ -11,13 +11,15 @@ import WhatsAppButton from "../components/WhatsAppButton";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Header />
       <div 
-        className="relative bg-cover bg-center"
+        className="relative bg-cover bg-center pt-[80px]"
         style={{ backgroundImage: `url('/imgs/bg-hero.png')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <Header />
-        <HeroSection />
+        <div className="relative">
+          <HeroSection />
+        </div>
       </div>
       <RegionsSection />
       <AboutSection />
