@@ -38,7 +38,7 @@ const AboutSection = () => {
               a solucionar todas as suas dificuldades no momento da 
               venda ou compra do seu sonhado imóvel.
             </p>
-            <Button className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3">
+            <Button className="bg-[#CC9933] hover:bg-[#B8852E] text-white px-8 py-3">
               Conheça a BH Elite Imobiliária →
             </Button>
           </div>

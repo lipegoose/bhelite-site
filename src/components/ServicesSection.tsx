@@ -47,7 +47,7 @@ const ServicesSection = () => {
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   {service.description}
                 </p>
-                <Button className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2">
+                <Button className="bg-[#CC9933] hover:bg-[#B8852E] text-white px-6 py-2">
                   {service.buttonText}
                 </Button>
               </CardContent>

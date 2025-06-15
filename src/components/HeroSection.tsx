@@ -20,14 +20,14 @@ const HeroSection = () => {
         <div className="bg-white rounded-lg p-6 max-w-6xl mx-auto shadow-2xl mt-12">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
             <div>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#CC9933] focus:border-[#CC9933] bg-white">
                 <option>VENDA</option>
                 <option>LOCAÇÃO</option>
               </select>
             </div>
             
             <div>
-              <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+              <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#CC9933] focus:border-[#CC9933] bg-white">
                 <option>APARTAMENTO</option>
                 <option>CASA</option>
                 <option>TERRENO</option>
@@ -38,27 +38,27 @@ const HeroSection = () => {
             <div>
               <Input 
                 placeholder="BELO HORIZONTE" 
-                className="px-4 py-3 focus:ring-blue-500 focus:border-blue-500"
+                className="px-4 py-3 focus:ring-[#CC9933] focus:border-[#CC9933]"
               />
             </div>
             
             <div>
               <Input 
                 placeholder="BAIRRO" 
-                className="px-4 py-3 focus:ring-blue-500 focus:border-blue-500"
+                className="px-4 py-3 focus:ring-[#CC9933] focus:border-[#CC9933]"
               />
             </div>
             
-            <Button className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 h-auto">
+            <Button className="bg-[#CC9933] hover:bg-[#B8852E] text-white px-8 py-3 h-auto">
               BUSCAR
             </Button>
           </div>
           
           <div className="flex justify-center gap-6 mt-4 text-sm">
-            <button className="text-gray-600 hover:text-gray-800 flex items-center gap-1">
+            <button className="text-gray-600 hover:text-[#CC9933] flex items-center gap-1 transition-colors">
               <span>≡</span> Avançado
             </button>
-            <button className="text-gray-600 hover:text-gray-800 flex items-center gap-1">
+            <button className="text-gray-600 hover:text-[#CC9933] flex items-center gap-1 transition-colors">
               <span>#</span> Por código
             </button>
           </div>
