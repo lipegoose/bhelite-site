@@ -83,7 +83,7 @@ const BlogSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3">
+          <Button className="bg-[#CC9933] hover:bg-[#B8852E] text-white px-8 py-3">
             VER MAIS ARTIGOS
           </Button>
         </div>
