@@ -29,7 +29,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Conheça as Soluções da BH Elite Imobiliária
+            Conheça as Soluções da <span className="text-[#CC9933]">BH Elite</span> Imobiliária
           </h2>
           <p className="text-lg text-gray-600">
             Oportunidades para quem quer vender, alugar ou comprar imóveis em Belo Horizonte.

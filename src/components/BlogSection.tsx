@@ -35,7 +35,7 @@ const BlogSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Já Conhece o Blog da BH Elite Imobiliária?
+            Já Conhece o Blog da <span className="text-[#CC9933]">BH Elite</span> Imobiliária?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Informações para quem quer comprar, vender ou alugar um imóvel e dicas dos melhores lugares de Belo Horizonte.
@@ -66,7 +66,7 @@ const BlogSection = () => {
                   ))}
                 </div>
                 
-                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#CC9933] transition-colors">
                   {post.title}
                 </h3>
                 
@@ -74,7 +74,7 @@ const BlogSection = () => {
                   {post.excerpt}
                 </p>
                 
-                <button className="text-gray-800 font-medium text-sm hover:text-blue-600 transition-colors">
+                <button className="text-gray-800 font-medium text-sm hover:text-[#CC9933] transition-colors">
                   LEIA MAIS
                 </button>
               </CardContent>

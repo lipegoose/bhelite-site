@@ -23,7 +23,7 @@ const AboutSection = () => {
               melhor imobiliária de Nova Lima!
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Na BH Elite Imobiliária, cada imóvel é tratado de forma única e 
+              Na <span className="text-[#CC9933] font-semibold">BH Elite</span> Imobiliária, cada imóvel é tratado de forma única e 
               especial. Por isso, conectamos os melhores imóveis aos 
               melhores clientes.
             </p>
@@ -39,7 +39,7 @@ const AboutSection = () => {
               venda ou compra do seu sonhado imóvel.
             </p>
             <Button className="bg-[#CC9933] hover:bg-[#B8852E] text-white px-8 py-3">
-              Conheça a BH Elite Imobiliária →
+              Conheça a <span className="font-semibold">BH Elite</span> Imobiliária →
             </Button>
           </div>
         </div>
