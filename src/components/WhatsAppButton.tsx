@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
       aria-label="Fale conosco pelo WhatsApp"
     >
       <img
-        src="/lovable-uploads/83008959-7d54-4014-b3fb-ed299e30bdb0.png"
+        src="/imgs/whatsapp.png"
         alt="Fale conosco pelo WhatsApp"
         className="w-full h-full rounded-full"
       />
