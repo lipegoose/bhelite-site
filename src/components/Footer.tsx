@@ -80,62 +80,15 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Unidades */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+        {/* Endereço Único */}
+        <div className="mt-12 text-center">
           <div>
-            <h4 className="font-bold mb-2">Unidade Class: Mangabeiras</h4>
+            <h4 className="font-bold mb-2">BH Elite Imobiliária</h4>
             <p className="text-sm text-gray-600">
               📍 Rua Ramalhete, 475<br />
               Mangabeiras - Belo Horizonte/MG.<br />
               CRECI: 2392 F
             </p>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Unidade Class: Vila da Serra</h4>
-            <p className="text-sm text-gray-600">
-              📍 Alameda Oscar Niemeyer 288<br />
-              loja 01<br />
-              Vale do Sereno Nova Lima/MG.<br />
-              CRECI 9023
-            </p>
-          </div>
-          <div className="md:col-span-2 lg:col-span-1">
-            <div className="grid grid-cols-2 gap-4 text-left">
-              <div>
-                <h5 className="font-bold text-sm mb-1">Unidade Floresta</h5>
-                <p className="text-xs text-gray-600">
-                  📍 Rua Dona Maria Ignez, 219<br />
-                  Floresta - Belo Horizonte/MG.<br />
-                  CRECI: 2392
-                </p>
-              </div>
-              <div>
-                <h5 className="font-bold text-sm mb-1">Unidade Silveira</h5>
-                <p className="text-xs text-gray-600">
-                  📍 Rua Ilacir Pereira Lima, 661<br />
-                  Silveira - Belo Horizonte/MG.<br />
-                  CRECI: 3289
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-left mt-4">
-              <div>
-                <h5 className="font-bold text-sm mb-1">Unidade Palmares</h5>
-                <p className="text-xs text-gray-600">
-                  📍 Rua José Cleto, 200 - Loja 2<br />
-                  Palmares - Belo Horizonte/MG.<br />
-                  CRECI: 08402
-                </p>
-              </div>
-              <div>
-                <h5 className="font-bold text-sm mb-1">Unidade Castelo</h5>
-                <p className="text-xs text-gray-600">
-                  📍 Av. Miguel Perrela, 47<br />
-                  Castelo - Belo Horizonte/MG.<br />
-                  CRECI: 3650
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
