@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 BH Elite Imobiliária. Todos os direitos reservados.
+              © 2024 BH Elite Imobiliária. Todos os direitos reservados. Uma criação <a href="https://hera-i.com.br/" className="inline-flex items-center" target="_blank" rel="noopener noreferrer" title="HeRa-i"><img src="https://hera-i.com.br/imgs/logo.png" alt="HeRa-i" className="h-5 hover:opacity-80 transition-opacity" /></a>.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">
