@@ -113,7 +113,7 @@ const Footer = () => {
                 <a href="#" className="hover:text-gray-300 ml-1">Termos de uso</a>
               </p>
               <p className="text-xs mt-1">
-                Feito com ❤️ pelo time da RocketImob | Site para imobiliária
+                Feito com ❤️ pelo time da <a href="https://hera-i.com.br/" className="inline-flex items-center" target="_blank" rel="noopener noreferrer" title="HeRa-i"><img src="https://hera-i.com.br/imgs/logo.png" alt="HeRa-i" className="h-5 hover:opacity-80 transition-opacity" /></a> | Site para imobiliária
               </p>
             </div>
           </div>
