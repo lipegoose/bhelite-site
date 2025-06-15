@@ -33,7 +33,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/185efedd-8775-45c1-972d-52844c78aad9.png"
+              src="/imgs/logo-bhelite.png"
               alt="BH Elite Imobiliária" 
               className="h-20 w-auto"
             />

@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <div 
         className="relative bg-cover bg-center"
-        style={{ backgroundImage: `url('/lovable-uploads/f9315e30-e557-4105-97fd-5d56b4b8483f.png')` }}
+        style={{ backgroundImage: `url('/imgs/bg-hero.png')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/60" />
         <Header />
