@@ -22,15 +22,15 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-4 text-sm">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 hover:text-[#CC9933] transition-colors cursor-pointer" title="Meus Favoritos">
               <Heart className="w-4 h-4" />
               <span>Meus Favoritos</span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 hover:text-[#CC9933] transition-colors cursor-pointer" title="Anuncie seu Imóvel">
               <Megaphone className="w-4 h-4" />
               <span>Anuncie seu Imóvel</span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 hover:text-[#CC9933] transition-colors cursor-pointer" title="Área do Cliente">
               <LogIn className="w-4 h-4" />
               <span>Área do Cliente</span>
             </div>
@@ -53,22 +53,22 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
-              <a href="#inicio" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#inicio" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Início
               </a>
-              <a href="#imoveis" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#imoveis" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Imóveis
               </a>
-              <a href="#sobre" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#sobre" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Sobre
               </a>
-              <a href="#servicos" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#servicos" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Serviços
               </a>
-              <a href="#blog" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#blog" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Blog
               </a>
-              <a href="#contato" className="text-white hover:text-gray-300 font-medium transition-colors">
+              <a href="#contato" className="text-white hover:text-[#CC9933] font-medium transition-colors">
                 Contato
               </a>
             </div>
@@ -77,7 +77,7 @@ const Header = () => {
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white p-2"
+                className="text-white p-2 hover:text-[#CC9933] transition-colors"
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -88,22 +88,22 @@ const Header = () => {
           {isMenuOpen && (
             <div className="lg:hidden pb-6">
               <div className="space-y-4">
-                <a href="#inicio" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#inicio" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Início
                 </a>
-                <a href="#imoveis" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#imoveis" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Imóveis
                 </a>
-                <a href="#sobre" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#sobre" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Sobre
                 </a>
-                <a href="#servicos" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#servicos" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Serviços
                 </a>
-                <a href="#blog" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#blog" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Blog
                 </a>
-                <a href="#contato" className="block text-white hover:text-gray-300 font-medium">
+                <a href="#contato" className="block text-white hover:text-[#CC9933] font-medium transition-colors">
                   Contato
                 </a>
               </div>
