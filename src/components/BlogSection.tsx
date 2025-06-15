@@ -1,37 +1,32 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const BlogSection = () => {
   const blogPosts = [
     {
-      title: "Como Escolher o Bairro Ideal em Belo Horizonte",
-      excerpt: "Descubra os principais fatores a considerar na hora de escolher onde morar na capital mineira.",
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      date: "15 Nov 2024",
-      readTime: "5 min"
+      day: "06",
+      month: "Mar",
+      title: "Recursos Tecnológicos Como Diferencial Em Imóveis Para Locação",
+      excerpt: "O constante desenvolvimento tecnológico possibilitou que tarefas antes unicamente analógicas fossem tomadas pelo digital. Hoje em dia é difícil imaginar [...]",
+      categories: ["Atualizar", "Aluguel de Imóveis"],
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
-      title: "Mercado Imobiliário em 2024: Tendências e Oportunidades",
-      excerpt: "Análise completa das tendências do mercado imobiliário para o ano de 2024 em BH.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      date: "10 Nov 2024",
-      readTime: "7 min"
+      day: "12",
+      month: "Fev",
+      title: "Mercado Imobiliário Em 2025: O Que Esperar No Primeiro Semestre?",
+      excerpt: "O mercado imobiliário brasileiro entra em 2025 com expectativas otimistas e novas tendências que prometem transformar a forma como as [...]",
+      categories: ["Mercado Imobiliário", "Mercado Imobiliário 2025"],
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
-      title: "Documentação para Compra de Imóvel: Guia Completo",
-      excerpt: "Tudo que você precisa saber sobre a documentação necessária para comprar seu imóvel.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      date: "05 Nov 2024",
-      readTime: "6 min"
-    },
-    {
-      title: "Investir em Imóveis: Dicas para Iniciantes",
-      excerpt: "Primeiros passos para quem quer começar a investir no mercado imobiliário.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      date: "01 Nov 2024",
-      readTime: "8 min"
+      day: "28",
+      month: "Jan",
+      title: "Comprar Ou Alugar: O Que É Melhor?",
+      excerpt: "A decisão entre comprar ou alugar um imóvel sempre foi um tema central nas finanças pessoais e planejamento familiar. Com [...]",
+      categories: ["Mercado Imobiliário", "Mercado Imobiliário 2025"],
+      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     }
   ];
 
@@ -40,58 +35,56 @@ const BlogSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Blog da <span className="text-yellow-600">BH Elite</span>
+            Já Conhece o Blog da BH Elite Imobiliária?
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Fique por dentro das últimas notícias, dicas e tendências do mercado 
-            imobiliário de Belo Horizonte.
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Informações para quem quer comprar, vender ou alugar um imóvel e dicas dos melhores lugares de Belo Horizonte.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post, index) => (
-            <Card key={index} className="group cursor-pointer hover:shadow-2xl transition-all duration-300 overflow-hidden">
-              <div className="relative h-64 overflow-hidden">
+            <Card key={index} className="group cursor-pointer hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div className="relative">
                 <img 
                   src={post.image} 
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-black text-white p-2 text-center">
+                  <div className="text-lg font-bold">{post.day}</div>
+                  <div className="text-sm">{post.month}</div>
+                </div>
               </div>
               
               <CardContent className="p-6">
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>{post.date}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    <span>{post.readTime}</span>
-                  </div>
+                <div className="flex gap-2 mb-3">
+                  {post.categories.map((category, catIndex) => (
+                    <span key={catIndex} className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                      {category}
+                    </span>
+                  ))}
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                   {post.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
                 
-                <div className="flex items-center text-yellow-600 font-medium group-hover:gap-3 transition-all">
-                  <span>Ler mais</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
+                <button className="text-gray-800 font-medium text-sm hover:text-blue-600 transition-colors">
+                  LEIA MAIS
+                </button>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center">
-          <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3">
-            Ver Todos os Artigos
+          <Button className="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3">
+            VER MAIS ARTIGOS
           </Button>
         </div>
       </div>

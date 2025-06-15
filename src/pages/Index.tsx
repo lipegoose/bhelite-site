@@ -15,7 +15,7 @@ const Index = () => {
         className="relative bg-cover bg-center"
         style={{ backgroundImage: `url('/imgs/bg-hero.png')` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/60" />
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
         <Header />
         <HeroSection />
       </div>
