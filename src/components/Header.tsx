@@ -41,13 +41,13 @@ const Header = () => {
       {/* Main header */}
       <div className="bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <nav className="flex items-center justify-between py-4">
+          <nav className="flex items-center justify-between py-1">
             {/* Logo */}
             <div className="flex items-center">
               <img 
                 src="/imgs/logo-bhelite.png"
                 alt="BH Elite Imobiliária" 
-                className="h-12 w-auto"
+                className="h-[70px] w-auto"
               />
             </div>
 
