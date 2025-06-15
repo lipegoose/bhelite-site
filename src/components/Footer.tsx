@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Social Icons */}
         <div className="flex justify-center space-x-4 mb-8">
-          <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors shadow">
+          <a href="https://www.facebook.com/profile.php?id=61577307390837" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors shadow">
             <Facebook className="w-5 h-5" />
           </a>
           <a href="#" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors shadow">
