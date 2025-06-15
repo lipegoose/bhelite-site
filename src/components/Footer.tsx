@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="space-y-4">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                src="/lovable-uploads/185efedd-8775-45c1-972d-52844c78aad9.png" 
                 alt="BH Elite Imobiliária" 
-                className="h-12 w-auto mb-4"
+                className="h-20 w-auto mb-4"
               />
               <p className="text-gray-300 leading-relaxed">
                 A BH Elite é especializada no mercado imobiliário de Belo Horizonte, 

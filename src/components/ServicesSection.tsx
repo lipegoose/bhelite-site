@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Search, MessageCircle, Key, PlusCircle, Users } from "lucide-react";
@@ -10,21 +9,21 @@ const ServicesSection = () => {
       title: "Anunciar Imóvel",
       description: "Anuncie seu imóvel conosco e alcance milhares de interessados com nossa expertise em marketing digital.",
       features: ["Avaliação gratuita", "Fotos profissionais", "Marketing digital", "Acompanhamento personalizado"],
-      color: "bg-blue-500"
+      color: "bg-yellow-600"
     },
     {
       icon: Search,
       title: "Buscar Imóvel",
       description: "Encontre o imóvel perfeito com nossa curadoria especializada e atendimento personalizado.",
       features: ["Busca personalizada", "Visitas agendadas", "Análise de documentação", "Negociação especializada"],
-      color: "bg-green-500"
+      color: "bg-yellow-600"
     },
     {
       icon: MessageCircle,
       title: "Consultoria Especializada",
       description: "Receba orientação completa sobre investimentos imobiliários e tomada de decisões estratégicas.",
       features: ["Análise de mercado", "Consultoria de investimento", "Orientação jurídica", "Planejamento financeiro"],
-      color: "bg-purple-500"
+      color: "bg-yellow-600"
     }
   ];
 

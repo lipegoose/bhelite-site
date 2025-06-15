@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative">
+    <header className="relative z-20">
       {/* Top bar */}
       <div className="bg-slate-800 text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
@@ -27,91 +27,82 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main header with background */}
-      <div 
-        className="relative bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60"></div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <nav className="flex items-center justify-between py-4">
-            {/* Logo */}
-            <div className="flex items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
-                alt="BH Elite Imobiliária" 
-                className="h-16 w-auto"
-              />
-            </div>
+      {/* Main header without background */}
+      <div className="relative max-w-7xl mx-auto px-4">
+        <nav className="flex items-center justify-between py-4">
+          {/* Logo */}
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/185efedd-8775-45c1-972d-52844c78aad9.png"
+              alt="BH Elite Imobiliária" 
+              className="h-20 w-auto"
+            />
+          </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
-              <a href="#inicio" className="text-white hover:text-yellow-400 font-medium transition-colors">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <a href="#inicio" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Início
+            </a>
+            <a href="#imoveis" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Imóveis
+            </a>
+            <a href="#sobre" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Sobre
+            </a>
+            <a href="#servicos" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Serviços
+            </a>
+            <a href="#blog" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Blog
+            </a>
+            <a href="#contato" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              Contato
+            </a>
+            <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2">
+              Anunciar Imóvel
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white p-2"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </nav>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-slate-900 z-50">
+            <div className="px-4 py-6 space-y-4">
+              <a href="#inicio" className="block text-white hover:text-yellow-400 font-medium">
                 Início
               </a>
-              <a href="#imoveis" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              <a href="#imoveis" className="block text-white hover:text-yellow-400 font-medium">
                 Imóveis
               </a>
-              <a href="#sobre" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              <a href="#sobre" className="block text-white hover:text-yellow-400 font-medium">
                 Sobre
               </a>
-              <a href="#servicos" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              <a href="#servicos" className="block text-white hover:text-yellow-400 font-medium">
                 Serviços
               </a>
-              <a href="#blog" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              <a href="#blog" className="block text-white hover:text-yellow-400 font-medium">
                 Blog
               </a>
-              <a href="#contato" className="text-white hover:text-yellow-400 font-medium transition-colors">
+              <a href="#contato" className="block text-white hover:text-yellow-400 font-medium">
                 Contato
               </a>
-              <Button className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2">
+              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white">
                 Anunciar Imóvel
               </Button>
             </div>
-
-            {/* Mobile menu button */}
-            <div className="lg:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white p-2"
-              >
-                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
-          </nav>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="lg:hidden absolute top-full left-0 right-0 bg-slate-900 z-50">
-              <div className="px-4 py-6 space-y-4">
-                <a href="#inicio" className="block text-white hover:text-yellow-400 font-medium">
-                  Início
-                </a>
-                <a href="#imoveis" className="block text-white hover:text-yellow-400 font-medium">
-                  Imóveis
-                </a>
-                <a href="#sobre" className="block text-white hover:text-yellow-400 font-medium">
-                  Sobre
-                </a>
-                <a href="#servicos" className="block text-white hover:text-yellow-400 font-medium">
-                  Serviços
-                </a>
-                <a href="#blog" className="block text-white hover:text-yellow-400 font-medium">
-                  Blog
-                </a>
-                <a href="#contato" className="block text-white hover:text-yellow-400 font-medium">
-                  Contato
-                </a>
-                <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white">
-                  Anunciar Imóvel
-                </Button>
-              </div>
-            </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </header>
   );

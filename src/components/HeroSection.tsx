@@ -1,5 +1,5 @@
 
-import { Search, Home, MapPin, DollarSign } from "lucide-react";
+import { Search, MapPin, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -7,13 +7,8 @@ const HeroSection = () => {
   return (
     <section 
       id="inicio"
-      className="relative py-24 bg-cover bg-center"
-      style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
-      }}
+      className="relative py-24"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 to-slate-900/60"></div>
-      
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
         <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           A MELHOR IMOBILIÁRIA DE
