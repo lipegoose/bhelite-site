@@ -13,7 +13,7 @@ const HeroSection = () => {
         <h1 className="text-4xl lg:text-6xl font-bold text-[#CC9933] mb-6 leading-tight">
           BH ELITE
           <br />
-          <span className="text-3xl lg:text-4xl font-normal text-white">A maior imobiliária da Rede Netimóveis</span>
+          <span className="text-3xl lg:text-4xl font-normal text-white">Especialista em venda e locação de imóveis em BH – atendimento direto, raiz e com o DNA da terra mineira.</span>
         </h1>
 
         {/* Search Form */}
