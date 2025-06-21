@@ -1,3 +1,4 @@
+
 import { Search, MapPin, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -54,10 +55,10 @@ const HeroSection = () => {
           </div>
           
           <div className="flex justify-center gap-6 mt-4 text-sm">
-            <button className="text-gray-600 hover:text-[#CC9933] flex items-center gap-1 transition-colors">
+            <button className="text-[#CC9933] font-medium drop-shadow-sm hover:underline flex items-center gap-1 transition-colors">
               <span>≡</span> Avançado
             </button>
-            <button className="text-gray-600 hover:text-[#CC9933] flex items-center gap-1 transition-colors">
+            <button className="text-[#CC9933] font-medium drop-shadow-sm hover:underline flex items-center gap-1 transition-colors">
               <span>#</span> Por código
             </button>
           </div>
