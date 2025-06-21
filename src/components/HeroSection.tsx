@@ -1,4 +1,3 @@
-
 import { Search, MapPin, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,7 +16,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Search Form */}
-        <div className="bg-white rounded-lg p-6 max-w-6xl mx-auto shadow-2xl mt-12">
+        <div className="bg-white bg-opacity-20 rounded-lg p-6 max-w-6xl mx-auto shadow-2xl mt-12">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
             <div>
               <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#CC9933] focus:border-[#CC9933] bg-white">
