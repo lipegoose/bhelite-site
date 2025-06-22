@@ -25,7 +25,7 @@ const AboutSection = () => {
               Já fui sócio de imobiliária grande, mas agora resolvi fazer diferente: atendimento direto, humano, sem blá-blá-blá nem empurra-empurra. Aqui na <span className="text-[#CC9933] font-semibold">BH Elite</span>, você não fala com assistente nem chatbot — fala comigo mesmo.
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Gosto de escutar mais do que falar, entender o que cê realmente procura, e correr atrás com estratégia, olho clínico e aquele jeitinho mineiro de resolver tudo sem estresse.
+              Gosto de escutar mais do que falar, entender o que <i>cê</i> realmente procura, e correr atrás com estratégia, olho clínico e aquele jeitinho mineiro de resolver tudo sem estresse.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Se quiser vender, alugar ou achar um cantinho novo pra morar, bora conversar. Aqui o negócio é sério, mas o atendimento é leve e com café passado na hora. ☕
