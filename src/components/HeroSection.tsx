@@ -35,10 +35,10 @@ const HeroSection = () => {
             </div>
             
             <div>
-              <Input 
-                placeholder="BELO HORIZONTE" 
-                className="px-4 py-3 focus:ring-[#CC9933] focus:border-[#CC9933]"
-              />
+              <select className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#CC9933] focus:border-[#CC9933] bg-white">
+                <option>BELO HORIZONTE</option>
+                <option>NOVA LIMA</option>
+              </select>
             </div>
             
             <div>
