@@ -1,4 +1,3 @@
-
 import { Search, MapPin, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,10 +9,10 @@ const HeroSection = () => {
       className="relative py-32 min-h-[80vh] flex items-center"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 text-center w-full">
-        <h1 className="text-4xl lg:text-6xl font-bold text-[#CC9933] mb-6 leading-tight">
-          BH ELITE
+        <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <span className="font-['Bell_MT']">BH ELITE</span>
           <br />
-          <span className="text-3xl lg:text-4xl font-normal text-white">Especialista em venda e locação de imóveis em BH – atendimento direto, raiz e com o DNA da terra mineira.</span>
+          <span className="text-3xl lg:text-4xl font-normal text-white">Especialista em venda e locação de imóveis em BH</span>
         </h1>
 
         {/* Search Form */}
